@@ -1884,11 +1884,23 @@ textarea.form-control {
 
 @media (max-width: 768px) {
   .section {
-    padding: 3rem 0;
+    padding: 2.75rem 0;
+  }
+  
+  .section-header {
+    margin: 0 auto 2rem auto;
   }
   
   .section-title {
-    font-size: 1.85rem;
+    font-size: 1.75rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .site-footer {
+    padding: 3rem 0 1.5rem 0;
   }
   
   .top-bar-links {
@@ -2064,6 +2076,53 @@ textarea.form-control {
 }
 
 @media (max-width: 480px) {
+  .container {
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+  }
+
+  .section {
+    padding: 2.25rem 0;
+  }
+
+  .section-header {
+    margin: 0 auto 1.5rem auto;
+  }
+
+  .section-tag {
+    font-size: 0.72rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+
+  .section-subtitle {
+    font-size: 0.875rem;
+    line-height: 1.45;
+  }
+
+  /* Mobile Brand Navigation */
+  .brand-emblem {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+
+  .brand-name {
+    font-size: 0.95rem;
+  }
+
+  .brand-sub {
+    font-size: 0.68rem;
+  }
+
+  .brand {
+    gap: 0.6rem;
+  }
+
   .hero-media::after {
     background: linear-gradient(
       to right,
@@ -2087,65 +2146,94 @@ textarea.form-control {
     grid-template-columns: 1fr;
   }
 
+  .stat-item {
+    padding: 1.15rem 0.75rem;
+  }
+
+  .exec-grid {
+    max-width: 100%;
+  }
+
   .member-card.exec-card {
     padding: 1.25rem 1rem 1.25rem 1rem;
   }
 
   .exec-card .member-photo-frame {
     width: 100%;
-    max-width: 240px;
+    max-width: 230px;
   }
 
   .exec-card .member-name {
-    font-size: 1.2rem;
-  }
-  
-  .directors-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.75rem;
+    font-size: 1.15rem;
   }
 
+  /* Former Presidents & Directors Mobile Grid */
+  .former-presidents-section {
+    padding: 2.25rem 0;
+  }
+
+  .directors-grid,
   .former-presidents-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.75rem;
+    gap: 0.65rem;
   }
 
-  .director-card {
-    padding: 0.85rem 0.6rem 0.85rem 0.6rem;
-  }
-
+  .director-card,
   .former-president-card {
-    padding: 0.85rem 0.6rem 0.85rem 0.6rem;
+    padding: 0.75rem 0.5rem 0.7rem 0.5rem;
+    border-top-width: 3px;
   }
 
-  .director-photo-frame {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    margin-bottom: 0.65rem;
-  }
-
+  .director-photo-frame,
   .former-president-photo-frame {
     width: 100%;
     aspect-ratio: 1 / 1;
-    margin-bottom: 0.65rem;
+    border-radius: 5px;
+    margin-bottom: 0.45rem;
   }
 
-  .director-name {
-    font-size: 0.92rem;
-  }
-
-  .former-president-name {
-    font-size: 0.92rem;
-  }
-
+  .director-position,
   .former-president-position {
     font-size: 0.62rem;
+    letter-spacing: 0.04em;
     padding: 0.15rem 0.4rem;
+    margin-bottom: 0.25rem;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .director-name,
+  .former-president-name {
+    font-size: 0.875rem;
+    line-height: 1.25;
+    min-height: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+
+  .onam-banner {
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .site-footer {
+    padding: 2.5rem 0 1.5rem 0;
+  }
+
+  .footer-grid {
+    gap: 2rem;
+    margin-bottom: 2rem;
   }
 
   .contact-info-card,
   .contact-form-card {
-    padding: 1.75rem 1.25rem;
+    padding: 1.5rem 1.15rem;
   }
   
   .btn {
@@ -2157,12 +2245,62 @@ textarea.form-control {
   }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 350px) {
+  .container {
+    padding-left: 0.65rem;
+    padding-right: 0.65rem;
+  }
+
+  .brand-emblem {
+    width: 34px;
+    height: 34px;
+    font-size: 0.9rem;
+  }
+
+  .brand-name {
+    font-size: 0.85rem;
+  }
+
+  .brand-sub {
+    font-size: 0.6rem;
+  }
+
+  .brand {
+    gap: 0.45rem;
+  }
+
   .directors-grid,
   .former-presidents-grid {
     grid-template-columns: 1fr;
-    max-width: 260px;
+    max-width: 250px;
     margin-left: auto;
     margin-right: auto;
+    gap: 0.9rem;
+  }
+
+  .director-card,
+  .former-president-card {
+    padding: 0.85rem 0.65rem;
+  }
+
+  .director-name,
+  .former-president-name {
+    font-size: 0.95rem;
+    min-height: auto;
+  }
+
+  .director-position,
+  .former-president-position {
+    font-size: 0.65rem;
+  }
+
+  .sticky-enquiry {
+    bottom: 0.75rem;
+    right: 0.75rem;
+  }
+
+  .sticky-enquiry-btn {
+    padding: 0.6rem 0.95rem;
+    font-size: 0.8rem;
   }
 }
