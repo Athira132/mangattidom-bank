@@ -1241,9 +1241,25 @@ button, input, select, textarea {
    -------------------------------------------------------------------------- */
 .branch-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin-top: 2rem;
+}
+
+.branch-card-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: auto;
+  flex-wrap: wrap;
+}
+
+.branch-card-actions .btn {
+  flex: 1 1 140px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .branch-card {
@@ -2229,6 +2245,24 @@ textarea.form-control {
   .footer-grid {
     gap: 2rem;
     margin-bottom: 2rem;
+  }
+
+  .head-office-card {
+    padding: 1.5rem 1.15rem;
+    margin-bottom: 2rem;
+  }
+
+  .branch-card {
+    padding: 1.5rem 1.15rem;
+  }
+
+  .branch-card-actions {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .branch-card-actions .btn {
+    width: 100%;
   }
 
   .contact-info-card,
