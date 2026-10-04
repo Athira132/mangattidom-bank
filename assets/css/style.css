@@ -1439,6 +1439,7 @@ button, input, select, textarea {
 }
 
 .gallery-thumb {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -2060,6 +2061,17 @@ textarea.form-control {
     aspect-ratio: 1 / 1;
     margin-bottom: 0.85rem;
   }
+
+  /* Mobile Gallery: Exactly 2 images per row */
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .gallery-item {
+    aspect-ratio: 1 / 1;
+    border-radius: 6px;
+  }
   
   .purpose-grid, .branch-grid, .services-nav-grid, .community-themes-grid {
     grid-template-columns: 1fr;
@@ -2331,6 +2343,15 @@ textarea.form-control {
   .director-position,
   .former-president-position {
     font-size: 0.65rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .gallery-item {
+    border-radius: 4px;
   }
 
   .sticky-enquiry {
