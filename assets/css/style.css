@@ -230,60 +230,10 @@ button, input, select, textarea {
 }
 
 /* --------------------------------------------------------------------------
-   TOP BAR
+   TOP BAR (REMOVED)
    -------------------------------------------------------------------------- */
 .top-bar {
-  background-color: #ffffff;
-  border-bottom: 1px solid var(--border-light);
-  font-size: 0.8125rem;
-  color: var(--text-muted);
-  padding: 0.45rem 0;
-}
-
-.top-bar-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.top-bar-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  color: var(--text-body);
-}
-
-.top-bar-item strong {
-  color: var(--primary-red);
-  font-weight: 600;
-}
-
-.top-bar-links {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-  flex-wrap: wrap;
-}
-
-.top-bar-link {
-  color: var(--text-muted);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-}
-
-.top-bar-link:hover {
-  color: var(--primary-red);
-}
-
-.top-bar-icon {
-  width: 14px;
-  height: 14px;
-  color: var(--primary-red);
-  display: inline-block;
-  vertical-align: middle;
+  display: none !important;
 }
 
 /* --------------------------------------------------------------------------
@@ -592,10 +542,39 @@ button, input, select, textarea {
   font-style: italic;
   font-weight: 500;
   line-height: 1.5;
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
   border-left: 4px solid var(--primary-red);
   padding-left: 1.1rem;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85);
+}
+
+/* 104+ Years of Service Hero Highlight */
+.hero-years-highlight {
+  display: inline-flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.96);
+  border-left: 5px solid var(--primary-red);
+  padding: 0.75rem 1.4rem 0.75rem 1.25rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+}
+
+.hero-years-num {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: var(--primary-red);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.hero-years-label {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  margin-top: 0.25rem;
 }
 
 .hero-actions {
@@ -1930,9 +1909,6 @@ textarea.form-control {
     padding: 3rem 0 1.5rem 0;
   }
   
-  .top-bar-links {
-    display: none;
-  }
   
   /* Mobile Navigation */
   .nav-toggle {
@@ -2006,6 +1982,20 @@ textarea.form-control {
   
   .hero-sub {
     font-size: 1.1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-years-highlight {
+    margin-bottom: 1.5rem;
+    padding: 0.65rem 1.2rem;
+  }
+
+  .hero-years-num {
+    font-size: 2.35rem;
+  }
+
+  .hero-years-label {
+    font-size: 0.85rem;
   }
   
   .stats-grid {
@@ -2176,6 +2166,19 @@ textarea.form-control {
   .hero-title {
     font-size: 1.8rem;
   }
+
+  .hero-years-highlight {
+    margin-bottom: 1.35rem;
+    padding: 0.55rem 1rem;
+  }
+
+  .hero-years-num {
+    font-size: 2.1rem;
+  }
+
+  .hero-years-label {
+    font-size: 0.8rem;
+  }
   
   .page-hero-title {
     font-size: 1.85rem;
@@ -2299,6 +2302,19 @@ textarea.form-control {
   
   .hero-actions {
     flex-direction: column;
+  }
+
+  .hero-years-highlight {
+    padding: 0.5rem 0.85rem;
+    margin-bottom: 1.15rem;
+  }
+
+  .hero-years-num {
+    font-size: 1.85rem;
+  }
+
+  .hero-years-label {
+    font-size: 0.75rem;
   }
 }
 
